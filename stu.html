@@ -23,7 +23,7 @@
            var avg=sum/3;
          
        }
-    stu.sort(function(a,b){return (a.name).compare(b.name);});
+    stu.sort(function(a,b){return (a.name).localeCompare(b.name);});
      stu.sort(function(a,b){return (b.sum-a.sum);});
     /*<h1>sorting students sum</h1>
     for(var i=0;i<stu.length;i++)
