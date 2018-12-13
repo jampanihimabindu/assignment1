@@ -6,8 +6,6 @@
        {
            this.name=name;
            this.subj=new Array(Math.floor(Math.random() * 100)+20,Math.floor(Math.random() * 100)+20,Math.floor(Math.random() * 100)+20);
-   
-             
        }
        for(var i=0;i<stu.length;i++)
        {
@@ -18,20 +16,18 @@
            }
            var avg=sum/3;
        }
-var stu1=new student("bindu");
+       var stu1=new student("bindu");
        var stu2=new student("maruthi");
        var stu3=new student("bharathi");
        var stu4=new student("ramya");
        var stu5=new student("rajani");
        var stu=[stu1,stu2,stu3,stu4,stu5];
        stu.sort(function(a,b){return (b.sum-a.sum);});
-
-       for(var i=0;i<stu.length;i++)
-{
-
-document.writeln(stu[i].name+"  "+stu[i].sum);
-}
-stu.sort(function(a,b){return (b.avg-a.avg);});
+    for(var i=0;i<stu.length;i++)
+    {
+     document.writeln(stu[i].name+"  "+stu[i].sum);
+   }
+   stu.sort(function(a,b){return (b.avg-a.avg);});
 //<h1>sorting students average </h1>
 for(var i=0;i<stu.length;i++)
 {
